@@ -1,0 +1,66 @@
+{
+	"type": "NetIOConfiguration",
+	"version": 2,
+	"connections": [
+		{
+			"name": "connection",
+			"host": "192.168.0.150",
+			"port": 3200,
+			"initialsend": "iniciandO"
+		}
+	],
+	"pages": [
+		{
+			"name": "pulsador",
+			"label": "pulsador",
+			"connection": "connection",
+			"fitToScreen": false,
+			"items": [
+				{
+					"top": 230,
+					"left": 90,
+					"width": 140,
+					"height": 60,
+					"type": "button",
+					"label": "Bajar Persiana",
+					"shape": "rounded",
+					"background": "237,17,17",
+					"border": "70,70,70",
+					"textcolor": "230,230,230",
+					"sends": [
+						"PULSADOR_2_ON"
+					],
+					"release": "PULSADOR_2_OFF"
+				},
+				{
+					"top": 110,
+					"left": 90,
+					"width": 140,
+					"height": 60,
+					"type": "button",
+					"label": "Subir Persiana",
+					"shape": "rounded",
+					"background": "237,17,17",
+					"border": "70,70,70",
+					"textcolor": "230,230,230",
+					"sends": [
+						"PULSADOR_1_ON"
+					],
+					"release": "PULSADOR_1_OFF"
+				}
+			],
+			"width": 320,
+			"height": 480
+		}
+	],
+	"device": "iPhone",
+	"orientation": "portrait",
+	"name": "Pulsador persiana NETIO",
+	"description": "",
+	"navigation": "fix",
+	"pagebuttonwidth": "static",
+	"style": "flat",
+	"theme": "dark",
+	"preventSleep": false,
+	"switchOnSwipe": true
+}
